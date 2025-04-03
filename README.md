@@ -8,7 +8,15 @@ The script **automatically determines a project name** based on the name of the 
 
 It also includes an optional feature to copy the original images into a separate folder, renaming them according to their grid number.
 
-This is useful for presenting multiple design options, photos, or assets to clients or team members, allowing them to easily reference specific items by number.
+## Use Cases
+
+This script is particularly useful when you need to present multiple visual options or a collection of images in a clear, organized format where each item can be easily identified by number. Common scenarios include:
+
+- **Client Design Selection:** Show clients multiple logo variations, website mockups, UI designs, illustration styles, or branding concepts. Clients can easily communicate their preferences by referencing the numbers (e.g., "We like options 2, 5, and 9").
+- **Team Review & Feedback:** Share batches of icons, character designs, marketing assets, or other visuals with your team for internal review. Numbering makes discussion and feedback specific and unambiguous.
+- **Photo Proof Sheets:** Quickly generate contact sheets for photographers to share with clients after a shoot, allowing them to select their desired images by number.
+- **Asset Previews:** Create visual inventories or catalogs of game assets, stock photos, textures, or design elements for quick reference.
+- **A/B Testing Visuals:** Easily present different visual versions of an advertisement, social media post, or UI component side-by-side with clear identifiers.
 
 ## Features
 
