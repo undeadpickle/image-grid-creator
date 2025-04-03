@@ -1,0 +1,17 @@
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Output Folders (Optional - if you don't want to commit example output)
+renamed_grid_images/
+*.png # Or be more specific if you want to commit *some* PNGs
+
+# OS-specific files
+.DS_Store
+Thumbs.db
