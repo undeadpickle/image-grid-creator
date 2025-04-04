@@ -54,22 +54,30 @@ This script is particularly useful when you need to present multiple visual opti
 
 1.  **Prepare Images:** Place all the PNG images you want to include in the grid into a single folder (e.g., `input_images`).
 2.  **Save Script:** Place the `make_grid.py` script file inside your main project folder. The name of this folder will be used as the project name in the output filename.
-3.  **Run Script:** Open your terminal or command prompt, navigate to the directory where you saved the script (`make_grid.py`), and run it using Python 3:
+3.  **Run Script:** Open your terminal or command prompt, navigate to the directory where you saved the script (`make_grid.py`).
+4.  **Activate Environment:** If you created a virtual environment, activate it:
+    ```bash
+    source venv/bin/activate # On Windows use `.\venv\Scripts\activate`
+    ```
+    Your prompt should ideally change to show `(venv)` at the beginning.
+5.  **Execute the Script:** Run the script using `python3`:
 
     ```bash
-    # Activate virtual environment if you created one
-    # source venv/bin/activate
-
-    python make_grid.py
+    python3 make_grid.py
     ```
 
-4.  **Follow Prompts:** The script will ask for:
+    - **Troubleshooting Note:** If you get a `ModuleNotFoundError: No module named 'PIL'` _even though_ your prompt shows `(venv)`, it means activating the environment didn't correctly update your PATH. In this case, run the script by specifying the full path to the Python interpreter inside the venv like this:
+      ```bash
+      ./venv/bin/python3 make_grid.py
+      ```
+
+6.  **Follow Prompts:** The script will ask for:
 
     - **Input Folder:** The path to the folder containing your PNG images. Press Enter to use the default (`./input_images`). The script will confirm the project name derived from its containing folder.
     - **Output Directory:** Where to save the final grid image. Press Enter for the current directory (`.`).
     - **(Optional) Copy & Rename Confirmation:** If the `COPY_AND_RENAME_FILES` flag is enabled in the script, it will ask for confirmation before copying/renaming files.
 
-5.  **Output:**
+7.  **Output:**
     - **Grid Image:** A single PNG file will be created in the specified output directory. The filename will be dynamically generated based on the script's parent folder name and the grid dimensions (e.g., `your-project-folder_grid_3000x2500.png`).
     - **(Optional) Renamed Images Folder:** If the copy/rename feature was enabled and confirmed, a new folder (default: `./renamed_grid_images`) will be created containing copies of your original input images, renamed sequentially (`1.png`, `2.png`, etc.).
 
